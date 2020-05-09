@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/css/fontello.css">
+    <title>Home page</title>
+    <script src="https://kit.fontawesome.com/8d0774bf68.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="header center">
+                <div class="header_left">
+                    <a href="index.html" class="logo"><img class="logo_img" src="img/logo.png" alt="logo">
+                        <p class="bran">BRAN</p>
+                        <p class="d">D</p>
+                    </a>
+                </div>
+                <div class="fakebox">
+                    <input class="header_input" type="text" placeholder="Search for an item...">
+                    <button class="header_search"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="header_right">
+                    <div class="drop_cart">
+                        <a href="cart.html"><i class="icon-basket header_cart"></i></a>
+                        <div class="drop_c">
+                            <div class="drop_flex_c">
+                            </div>
+                            <div class="totals_hidden">
+                                <strong class="d-block">Общее количество товаров: </strong>
+                                <div id="quantity"></div>
+                                <hr>
+                                <strong class="d-block">Общая стоимость товаров: </strong>
+                                <div id="price"></div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="myAcc" data-toggle="modal" data-target="#exampleModal1">
+                        My account
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <h5 class="modal-title" id="exampleModalLabel1">My account</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="px-4 py-3">
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormEmail1">Email address</label>
+                                            <input type="email" class="form-control" id="exampleDropdownFormEmail1"
+                                                placeholder="email@example.com">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleDropdownFormPassword1">Password</label>
+                                            <input type="password" class="form-control"
+                                                id="exampleDropdownFormPassword1" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <label class="form-check-label" for="dropdownCheck">
+                                                    Remember me
+                                                </label>
+                                            </div>
+                                            <a class="" href="#">Forgot password?</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary buttonsign">Log in</button>
+                                    </form>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="newPadd">New around here? <a class="" href="#"><u> Sign up</u></a></div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </header>
+        <nav class="mynav center">
+            <ul class="mymenu">
+                <li class="mymenu_list"><a href="index.html" class="mymenu_link">Home</a></li>
+                <li class="mymenu_list">
+                    <a href="product1.html" class="mymenu_link">Man</a>
+                    <div class="drop">
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                                <li><a href="product1.html" class="drop_link">Blazers</a></li>
+                                <li><a href="product1.html" class="drop_link">Denim</a></li>
+                                <li><a href="product1.html" class="drop_link">Leggings/Pants</a></li>
+                                <li><a href="product1.html" class="drop_link">Skirts/Shorts</a></li>
+                                <li><a href="product1.html" class="drop_link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="drop_h33">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                            </ul>
+                            <a href="product1.html"><img class="mymenu_img" src="img/menu_man.png" alt="menu_man"></a>
+                            <a href="product1.html">
+                                <div class="super_sale">SUPER SALE</div>
+                            </a>
+                        </div>
+                    </div>
+                <li class="mymenu_list"><a href="product1.html" class="mymenu_link">Women</a>
+                    <div class="drop">
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                                <li><a href="product1.html" class="drop_link">Blazers</a></li>
+                                <li><a href="product1.html" class="drop_link">Denim</a></li>
+                                <li><a href="product1.html" class="drop_link">Leggings/Pants</a></li>
+                                <li><a href="product1.html" class="drop_link">Skirts/Shorts</a></li>
+                                <li><a href="product1.html" class="drop_link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="drop_h33">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                            </ul>
+                            <a href="product1.html"><img class="mymenu_img" src="img/menu_man.png" alt="menu_man"></a>
+                            <a href="product1.html">
+                                <div class="super_sale">SUPER SALE</div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="mymenu_list"><a href="product1.html" class="mymenu_link">Kids</a>
+                    <div class="drop drop_last">
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                                <li><a href="product1.html" class="drop_link">Blazers</a></li>
+                                <li><a href="product1.html" class="drop_link">Denim</a></li>
+                                <li><a href="product1.html" class="drop_link">Leggings/Pants</a></li>
+                                <li><a href="product1.html" class="drop_link">Skirts/Shorts</a></li>
+                                <li><a href="product1.html" class="drop_link">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                            </ul>
+                            <h3 class="drop_h33">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_flex">
+                            <h3 class="drop_h3">Women</h3>
+                            <ul class="drop_ul">
+                                <li><a href="product1.html" class="drop_link">Dresses</a></li>
+                                <li><a href="product1.html" class="drop_link">Tops</a></li>
+                                <li><a href="product1.html" class="drop_link">Sweaters/Knits</a></li>
+                                <li><a href="product1.html" class="drop_link">Jackets/Coats</a></li>
+                            </ul>
+                            <a href="product1.html"><img class="mymenu_img" src="img/menu_man.png" alt="menu_man"></a>
+                            <a href="product1.html">
+                                <div class="super_sale">SUPER SALE</div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    <section class="product_back product_back_text">
+        <h3 class="new_arrivals">Your information</h3>
+        <ul class="menu1">
+            <li><a class="product_crumbs" href="index.html">Home/ </a></li>
+            <li><a class="product_crumbs" href="product1.html">Men/ </a></li>
+            <li><a class="product_crumbs_active" href="product.html">New Arrivals</a></li>
+        </ul>
+    </section>
+
+    <section class="center checkout">
+        <div class="spoiler">
+            <details>
+                <summary class="checkout__summary">01. SHIPPING ADRESS</summary>
+                <div class="checkout__flex">
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">CHECK AS A GUEST OR REGISTER</h3>
+                        <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                        <div class="checkout__leftBlock__Radio">
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="guest">
+                                Checkout as a guest
+                            </label>
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="Register">
+                                REGISTER
+                            </label>
+                        </div>
+                        <h3 class="checkout__leftBlock__h3 checkout__leftBlock__h3_bottom">register and save time!</h3>
+                        <div class="checkout__leftBlock__text">
+                            <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Fast and easy checkout</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Easy access to your order
+                                history and status</div>
+                        </div>
+                        <a href="">
+                            <div class="checkout__button">Continue</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">Already registered?</h3>
+                        <div class="checkout__leftBlock__text">Please log in below</div>
+                        <h3 class="checkout__leftBlock__h">EMAIL ADDRESS<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="email">
+                        <h3 class="checkout__leftBlock__h">PASSWORD<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="password">
+                        <div class="checkout__req">*Required Fileds</div>
+                        <div class="checkout__flex1">
+                            <a href="">
+                                <div class="checkout__button checkout__button_log">LOG IN</div>
+                            </a>
+                            <a class="checkout_pass" href="">
+                                <h3 class="pass__forgot">Forgot Password?</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="spoiler">
+            <details>
+                <summary class="checkout__summary">02. Billing information</summary>
+                <div class="checkout__flex">
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">CHECK AS A GUEST OR REGISTER</h3>
+                        <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                        <div class="checkout__leftBlock__Radio">
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="guest">
+                                Checkout as a guest
+                            </label>
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="Register">
+                                REGISTER
+                            </label>
+                        </div>
+                        <h3 class="checkout__leftBlock__h3 checkout__leftBlock__h3_bottom">register and save time!</h3>
+                        <div class="checkout__leftBlock__text">
+                            <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Fast and easy checkout</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Easy access to your order
+                                history and status</div>
+                        </div>
+                        <a href="">
+                            <div class="checkout__button">Continue</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">Already registered?</h3>
+                        <div class="checkout__leftBlock__text">Please log in below</div>
+                        <h3 class="checkout__leftBlock__h">EMAIL ADDRESS<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="email">
+                        <h3 class="checkout__leftBlock__h">PASSWORD<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="password">
+                        <div class="checkout__req">*Required Fileds</div>
+                        <div class="checkout__flex1">
+                            <a href="">
+                                <div class="checkout__button checkout__button_log">LOG IN</div>
+                            </a>
+                            <a class="checkout_pass" href="">
+                                <h3 class="pass__forgot">Forgot Password?</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="spoiler">
+            <details>
+                <summary class="checkout__summary">03. Shipping information</summary>
+                <div class="checkout__flex">
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">CHECK AS A GUEST OR REGISTER</h3>
+                        <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                        <div class="checkout__leftBlock__Radio">
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="guest">
+                                Checkout as a guest
+                            </label>
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="Register">
+                                REGISTER
+                            </label>
+                        </div>
+                        <h3 class="checkout__leftBlock__h3 checkout__leftBlock__h3_bottom">register and save time!</h3>
+                        <div class="checkout__leftBlock__text">
+                            <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Fast and easy checkout</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Easy access to your order
+                                history and status</div>
+                        </div>
+                        <a href="">
+                            <div class="checkout__button">Continue</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">Already registered?</h3>
+                        <div class="checkout__leftBlock__text">Please log in below</div>
+                        <h3 class="checkout__leftBlock__h">EMAIL ADDRESS<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="email">
+                        <h3 class="checkout__leftBlock__h">PASSWORD<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="password">
+                        <div class="checkout__req">*Required Fileds</div>
+                        <div class="checkout__flex1">
+                            <a href="">
+                                <div class="checkout__button checkout__button_log">LOG IN</div>
+                            </a>
+                            <a class="checkout_pass" href="">
+                                <h3 class="pass__forgot">Forgot Password?</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="spoiler">
+            <details>
+                <summary class="checkout__summary">04. SHIPPING METHOD</summary>
+                <div class="checkout__flex">
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">CHECK AS A GUEST OR REGISTER</h3>
+                        <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                        <div class="checkout__leftBlock__Radio">
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="guest">
+                                Checkout as a guest
+                            </label>
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="Register">
+                                REGISTER
+                            </label>
+                        </div>
+                        <h3 class="checkout__leftBlock__h3 checkout__leftBlock__h3_bottom">register and save time!</h3>
+                        <div class="checkout__leftBlock__text">
+                            <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Fast and easy checkout</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Easy access to your order
+                                history and status</div>
+                        </div>
+                        <a href="">
+                            <div class="checkout__button">Continue</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">Already registered?</h3>
+                        <div class="checkout__leftBlock__text">Please log in below</div>
+                        <h3 class="checkout__leftBlock__h">EMAIL ADDRESS<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="email">
+                        <h3 class="checkout__leftBlock__h">PASSWORD<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="password">
+                        <div class="checkout__req">*Required Fileds</div>
+                        <div class="checkout__flex1">
+                            <a href="">
+                                <div class="checkout__button checkout__button_log">LOG IN</div>
+                            </a>
+                            <a class="checkout_pass" href="">
+                                <h3 class="pass__forgot">Forgot Password?</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="spoiler">
+            <details>
+                <summary class="checkout__summary">05. PAYMENT METHOD</summary>
+                <div class="checkout__flex">
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">CHECK AS A GUEST OR REGISTER</h3>
+                        <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                        <div class="checkout__leftBlock__Radio">
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="guest">
+                                Checkout as a guest
+                            </label>
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="Register">
+                                REGISTER
+                            </label>
+                        </div>
+                        <h3 class="checkout__leftBlock__h3 checkout__leftBlock__h3_bottom">register and save time!</h3>
+                        <div class="checkout__leftBlock__text">
+                            <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Fast and easy checkout</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Easy access to your order
+                                history and status</div>
+                        </div>
+                        <a href="">
+                            <div class="checkout__button">Continue</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">Already registered?</h3>
+                        <div class="checkout__leftBlock__text">Please log in below</div>
+                        <h3 class="checkout__leftBlock__h">EMAIL ADDRESS<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="email">
+                        <h3 class="checkout__leftBlock__h">PASSWORD<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="password">
+                        <div class="checkout__req">*Required Fileds</div>
+                        <div class="checkout__flex1">
+                            <a href="">
+                                <div class="checkout__button checkout__button_log">LOG IN</div>
+                            </a>
+                            <a class="checkout_pass" href="">
+                                <h3 class="pass__forgot">Forgot Password?</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+        <div class="spoiler">
+            <details>
+                <summary class="checkout__summary">06. ORDER REVIEW</summary>
+                <div class="checkout__flex">
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">CHECK AS A GUEST OR REGISTER</h3>
+                        <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                        <div class="checkout__leftBlock__Radio">
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="guest">
+                                Checkout as a guest
+                            </label>
+                            <label class="checkout__leftBlock__Radio__Label">
+                                <input class="checkout__leftBlock__Radio__Input" type="radio" name="register"
+                                    value="Register">
+                                REGISTER
+                            </label>
+                        </div>
+                        <h3 class="checkout__leftBlock__h3 checkout__leftBlock__h3_bottom">register and save time!</h3>
+                        <div class="checkout__leftBlock__text">
+                            <div class="checkout__leftBlock__text">Register with us for future convenience</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Fast and easy checkout</div>
+                            <div class="checkout__leftBlock__text"><i
+                                    class="fas fa-angle-double-right checkout__arrow"></i>Easy access to your order
+                                history and status</div>
+                        </div>
+                        <a href="">
+                            <div class="checkout__button">Continue</div>
+                        </a>
+                    </div>
+
+                    <div class="checkout__leftBlock">
+                        <h3 class="checkout__leftBlock__h3">Already registered?</h3>
+                        <div class="checkout__leftBlock__text">Please log in below</div>
+                        <h3 class="checkout__leftBlock__h">EMAIL ADDRESS<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="email">
+                        <h3 class="checkout__leftBlock__h">PASSWORD<span class="checkout__star">*</span></h3>
+                        <input class="checkout__input" type="password">
+                        <div class="checkout__req">*Required Fileds</div>
+                        <div class="checkout__flex1">
+                            <a href="">
+                                <div class="checkout__button checkout__button_log">LOG IN</div>
+                            </a>
+                            <a class="checkout_pass" href="">
+                                <h3 class="pass__forgot">Forgot Password?</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </div>
+    </section>
+    <div class="subs">
+        <section class="padd subscribe">
+            <div class="background_parent">
+                <div class="left_site center_sub">
+                    <div id="text_slide1">
+                        <img class="face" src="img/woman_face.png" alt="woman_face">
+                        <div>
+                            <div class="woman_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                                molestiae?
+                                Aspernatur quas ratione dolorem reprehenderit
+                                <div class="down_text">Person 1</div>
+                                <div class="down_text2">Country 1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="text_slide2">
+                        <img class="face" src="img/woman_face.png" alt="woman_face">
+                        <div>
+                            <div class="woman_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                                molestiae?
+                                Aspernatur quas ratione dolorem reprehenderit,
+                                omnis
+                                <div class="down_text">Person 2</div>
+                                <div class="down_text2">Country 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="text_slide3">
+                        <img class="face" src="img/woman_face.png" alt="woman_face">
+                        <div>
+                            <div class="woman_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+                                molestiae?
+                                Aspernatur quas ratione dolorem reprehenderit,
+                                omnis
+                                <div class="down_text">Person 3</div>
+                                <div class="down_text2">Country 3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_site center_sub">
+                    <div class="h_subscribe">
+                        <h2 class="h1_padd_right">Subscribe</h2>
+                        <h3 class="h3_padd_right">FOR OUR NEWLETTER AND PROMOTION</h3>
+                        <div class="sub">
+                            <input type="email" placeholder="Enter Your Email" class="subsc">
+                            <a href="#">
+                                <div class="subsc1">Subscribe</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <div class="center foot">
+        <div>
+            <a href="" class="logo"><img class="logo_img" src="img/logo.png" alt="logo">
+                <p class="bran">BRAN</p>
+                <p class="d">D</p>
+            </a>
+            <p class="foot_text"> Transition extensive data rather than cross functional solutions.
+                Monotonectally
+                syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                expanded
+                array of processes and cross-unit partnerships.<br><br> Efficiently
+                plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior
+                initiatives for
+                wireless technologies. Dynamically optimize.</p>
+        </div>
+        <div class="flex_company">
+            <h3 class="company_sum">Company</h3>
+            <ul>
+                <li class="foot_list"><a class="foot_link" href="index.html">Home</a></li>
+                <li class="foot_list"><a class="foot_link" href="product1.html">About</a></li>
+                <li class="foot_list"><a class="foot_link" href="product1.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="flex_company">
+            <h3 class="company_sum">Information</h3>
+            <ul>
+                <li class="foot_list"><a class="foot_link" href="product1.html">Tearms & Condition</a></li>
+                <li class="foot_list"><a class="foot_link" href="product1.html">Privacy Policy</a></li>
+                <li class="foot_list"><a class="foot_link" href="product1.html">How to Buy</a></li>
+            </ul>
+        </div>
+        <div class="flex_company">
+            <h3 class="company_sum">Shop category</h3>
+            <ul>
+                <li class="foot_list"><a class="foot_link" href="product1.html">Men</a></li>
+                <li class="foot_list"><a class="foot_link" href="product1.html">Women</a></li>
+                <li class="foot_list"><a class="foot_link" href="product1.html">Kids</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="foot_bottom center">
+        <p class="reserved">© 2020 Girfanov A.M.</p>
+        <div class="social">
+            <a href="">
+                <div class="sq sqf"><i class="fab fa-facebook-f white"></i></div>
+            </a>
+            <a href="#">
+                <div class="sq sqt"><i class="fab fa-twitter white"></i></div>
+            </a>
+            <a href="#">
+                <div class="sq"><i class="fab fa-instagram white"></i></div>
+            </a>
+            <a href="#">
+                <div class="sq sqv"><i class="fab fa-vk white"></i></div>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript">
+    let text_slide_cur = 0;
+
+    function showtext_slide() {
+        $('#text_slide' + (text_slide_cur + 1)).css({
+            opacity: 0
+        }).animate({
+            opacity: 1.0,
+            left: "50px"
+        }, 1000);
+        setTimeout(hidetext_slide, 5000);
+    }
+
+    function hidetext_slide() {
+        $('#text_slide' + (text_slide_cur + 1)).css({
+            opacity: 1
+        }).animate({
+            opacity: 0,
+            left: "-50px"
+        }, 1000, function () {
+            showtext_slide();
+        });
+        text_slide_cur = (text_slide_cur + 1) % 3;
+    }
+    $(document).ready(function () {
+        showtext_slide();
+    })
+</script>
+
+</body>
+<script>
+let totals = document.querySelector('.totals_hidden');
+let crosses = document.querySelectorAll('.cross')
+let elems = document.querySelectorAll('.buy-btn')
+let amount = document.querySelector('#quantity')
+elems.forEach(elem => {
+    elem.onclick = function () {
+        totals.classList.remove('totals_hidden')
+    }
+})
+
+let checkCross = () => {
+    let crosses = document.querySelectorAll('.cross')
+    crosses.forEach(cross => {
+        if (amount.innerText == 1) {
+            totals.classList.add('totals_hidden')
+        }
+    })
+}
+
+//subs
+let subs = document.querySelector('.subs');
+window.addEventListener('scroll', function () {
+    let st = document.documentElement.scrollTop;
+    if (st > 500) {
+        subs.classList.remove('subs');
+    }
+})
+</script>
+
+<script>
+function range() {
+    let
+        val = $('.range').val();
+    $('.range').css({
+        'background': '-webkit-linear-gradient(left ,#f16d7f 0%,#f16d7f ' + val / 5 + '%,#e6e6e6 ' + val /
+            5 +
+            '%, #e6e6e6 100%)'
+    });
+    let slider = document.querySelector(".range");
+    let output = document.getElementById("demo");
+    output.innerHTML = '$' + slider.value;
+    slider = function () {
+        output.innerHTML = '$' + this.value;
+    }
+}
+</script>
+
+</html>
